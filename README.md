@@ -1,5 +1,5 @@
 ## ML Model Explanation with Random Forest 
-This repository contains a Jupyter notebook that demonstrates how to build and explain a Random Forest Classifier using RAI Widgets. The notebook includes the following steps:  
+This repository contains a Jupyter notebook that demonstrates how to build and explain a Random Forest Classifier using RAI Widgets.It provides an insight on demonstrating the use of the Microsoft Responsible AI Toolbox in different datasets. The notebook includes the following steps:  
 1. **Install Packages**: Install necessary libraries such as `raiwidgets`, `rai-core-flask`, `scikit-learn`, `pandas`, `numpy`, and `matplotlib` to ensure all required tools are available.
 2. **Import Libraries**: Import essential libraries for data manipulation, model training, and explanation, including `pandas`, `numpy`, `sklearn`, and `raiwidgets`.
 3. **Generate Synthetic Hiring Dataset**: Create a synthetic dataset simulating a hiring process with features such as years of experience, education level, skill score, certifications, and leadership score. This dataset is used to train and evaluate the model.

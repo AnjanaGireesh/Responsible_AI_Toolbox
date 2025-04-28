@@ -26,9 +26,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         pip install papermill  # Install papermill for running the notebook
+        pip install ipykernel  # Install ipykernel to ensure proper kernel is available
 
     - name: Run Jupyter Notebook
       run: |
+        python -m ipykernel install --user  # Install the kernel
         papermill responsible_ai_toolbox.ipynb output_notebook.ipynb  # Replace with your notebook filename
 
     - name: Commit output notebook
@@ -38,3 +40,4 @@ jobs:
         author_email: github-actions@github.com
         message: 'Run notebook and commit the output'
         add: 'output_notebook.ipynb'
+
